@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+  <body>
+    <div class="cover-title">DANCE /</div>
+    <ul class="page-menu" id="js-pagemenu">
+      <li class="page-menu_item"><a href="#pirouette"></a></li>
+      <li class="page-menu_item"><a href="#moonwalk"></a></li>
+      <li class="page-menu_item"><a href="#breakdance"></a></li>
+    </ul>
+    <main class="common-main">
+      <div
+        class="common-section js-moving-man"
+        data-json="pirouette.json"
+        id="pirouette"
+      >
+        <div class="common-section_inner">
+          <div class="common-section_title">PIROUETTE</div>
+          <div class="moving-object">
+            <div class="moving-object_box js-moving-box"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="common-section js-moving-man"
+        data-json="moonwalk.json"
+        data-type="moonwalk"
+        id="moonwalk"
+      >
+        <div class="common-section_inner">
+          <div class="common-section_title">MOON WALK</div>
+          <div class="moving-object">
+            <div class="moving-object_box js-moving-box"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="common-section js-moving-man"
+        data-json="pirouette.json"
+        id="breakdance"
+      >
+        <div class="common-section_inner">
+          <div class="common-section_title">PIROUETTE</div>
+          <div class="moving-object">
+            <div class="moving-object_box js-moving-box"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
