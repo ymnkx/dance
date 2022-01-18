@@ -11,6 +11,7 @@ import PageMenu from './PageMenu';
 
 import MovingModel from './MovingModel';
 import MoonWalk from './MoonWalk';
+import BreakDance from './BreakDance';
 
 (() => {
   new PageMenu('.common-section');
@@ -23,6 +24,8 @@ import MoonWalk from './MoonWalk';
   cntnrs.forEach((cntnr) => {
     if (cntnr.dataset.type === 'moonwalk') {
       new MoonWalk(cntnr);
+    } else if (cntnr.dataset.type === 'breakdance') {
+      new BreakDance(cntnr);
     } else {
       new MovingModel(cntnr);
     }
