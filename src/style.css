@@ -88,8 +88,15 @@ svg path {
   position: relative;
   transition: transform 0.1s;
 }
+.moving-object_box svg path {
+  transition: fill 3s, stroke 3s;
+}
 .moving-object_box.-reverse {
   transform: scaleX(-1);
+}
+.moving-object_box.-red svg path {
+  fill: red;
+  stroke: red;
 }
 
 .page-menu {
