@@ -12,6 +12,7 @@ import PageMenu from './PageMenu';
 import MovingModel from './MovingModel';
 import MoonWalk from './MoonWalk';
 import BreakDance from './BreakDance';
+import WalkingDog from './WalkingDog';
 
 (() => {
   new PageMenu('.common-section');
@@ -30,4 +31,6 @@ import BreakDance from './BreakDance';
       new MovingModel(cntnr);
     }
   });
+
+  new WalkingDog();
 })();

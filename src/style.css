@@ -83,10 +83,16 @@ svg path {
   transform: translateY(-50%);
   max-height: 100%;
   aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
+
 .moving-object_box {
   position: relative;
   transition: transform 0.1s;
+  aspect-ratio: 1;
 }
 .moving-object_box svg path {
   transition: fill 3s, stroke 3s;
@@ -97,6 +103,21 @@ svg path {
 .moving-object_box.-red svg path {
   fill: red;
   stroke: red;
+}
+.moving-object_dog {
+  width: 10em;
+  height: 10em;
+  margin: 0 auto;
+}
+
+.moving-object_inner {
+  width: 100%;
+}
+
+.moving-object_name {
+  width: 100%;
+  list-style: none;
+  text-align: center;
 }
 
 .page-menu {
